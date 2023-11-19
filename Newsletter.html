@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Ad Meliora | Music Label </title>
+    <link rel="icon" type="image/x-icon" href="Images/AdMelioraLogo.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Newslatter.css'>
+    <script src="https://kit.fontawesome.com/79fa34a98c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"> Ad Meliora</a>
+        <ul>
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="index.html#About"> About </a></li>
+          <div class="dropdown">
+            <button class="dropbtn"> Artist
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Aespa.html">Aespa</a>
+              <a href="NadinAmizah.html"> Nadin Amizah</a>
+              <a href="DavidKushner.html"> David Kushner </a>
+              <a href="Mitsiki.html"> Mitsiki </a>
+              <a href="GracieAbrams.html"> Gracie Abrams</a>
+              <a href="NctDream.html">NCT Dream</a>
+            </div>
+          </div>
+          <li><a href="Gallery.html"> Gallery </a></li>
+          <li><a href="Newsletter.html"> Newslatter </a></li>
+        </ul>
+      </header>
+      <script>
+    window.addEventListener("scroll", function(){
+    var header = this.document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0)
+        })
+      </script>
+
+<!--Newsletter-->
+<div class="Newsletter">
+    <h1> Get Newsletter</h1>
+    <hr>
+    <p> Enter your data in the box below to recieve latest news and information about our artists</p>
+    <form>
+        <input type="text" placeholder="Name" required>
+        <br>
+        <input type="email" placeholder="Email" required>
+        <br>
+        <button onclick="myFunction()"> Subscirbe </button>
+</form>
+<p id="demo"> </p>
+<script>
+    function myFunction() {
+        var txt;
+        if (confirm ("Are you sure to subscirbe our newsletter")) {
+        txt = "Thank you for subscribing!";
+        } else {
+        txt = "Ups, see you another time!";
+        }
+        document.getElementById("demo").innerHTML = txt;
+    } 
+</script>
+<!--Footer-->
+<footer>
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/ddinnaaaa/"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="index.html#About">About</a>
+      <a href="index.html#team">Our Team</a>
+      <a href="Newsletter.html">Newslatter</a>
+    </div>
+    <div class="credit">
+    <p>Created by Dina Wulandari </a> &copy; 2023 </p>
+    </div>
+  </footer>
+</body>
+</html>
